@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Connexion</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .login-container {
+      width: 400px;
+      padding: 40px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+    
+    h2 {
+      text-align: center;
+    }
+    
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #45a049;
+    }
+    
+    .error-message {
+      color: #ff0000;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Interface Utilisateur</h2>
+    <form id="user-login-form">
+      <div class="error-message"></div>
+      <input type="password" placeholder="Mot de passe" id="user-password" required>
+      <button type="submit">Se connecter</button>
+    </form>
+  </div>
+
+  <div class="login-container" style="margin-top: 40px;">
+    <h2>Interface d'Administration</h2>
+    <form id="admin-login-form">
+      <div class="error-message"></div>
+      <input type="password" placeholder="Mot de passe" id="admin-password" required>
+      <button type="submit">Se connecter</button>
+    </form>
+  </div>
+
+  <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
